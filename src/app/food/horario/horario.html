@@ -1,0 +1,68 @@
+<section class="min-h-screen w-full px-6 md:px-12 lg:px-20 py-16 bg-gray-50">
+  <h1 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">Detalles</h1>
+
+  <div class="mx-auto mb-12" style="width: 120px; border-bottom: 3px solid #333;"></div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+    <article class="bg-white">
+      <div class="w-full h-78.75 overflow-hidden">
+        <img src="https://www.muyjapones.com/wp-content/uploads/2022/11/menu-Washoku.jpg" alt="Sabores"
+          class="w-full h-full object-cover">
+      </div>
+      <div class="p-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-3 uppercase">Sabores</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eius, corrupti dolorum suscipit officiis
+          explicabo.
+        </p>
+        <a href="#" class="inline-block text-gray-900 font-semibold hover:text-gray-600 transition uppercase">
+          Ver más →
+        </a>
+      </div>
+    </article>
+
+    <article class="bg-white">
+      <div class="w-full h-78.75 overflow-hidden">
+        <img src="https://telemaki.com/blog/assets/uploads/2021/05/rod-long-kImU-9S9uh8-unsplash-2048x1365.jpg"
+          alt="Sabores" class="w-full h-full object-cover">
+      </div>
+      <div class="pt-6 pr-6 pb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-3 uppercase">Sabores</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eius, corrupti dolorum suscipit officiis
+          explicabo.
+        </p>
+        <a href="#" class="inline-block text-gray-900 font-semibold hover:text-gray-600 transition uppercase">
+          Ver más →
+        </a>
+      </div>
+    </article>
+
+    <article class="bg-cover bg-center rounded-lg shadow-lg overflow-hidden relative border border-black"
+      style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/f2/be/65/caption.jpg');">
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative z-10 p-8 text-white">
+        <h2 class="text-2xl font-bold mb-10 uppercase tracking-widest">
+          Horario
+        </h2>
+
+        <div class="space-y-5 mb-8">
+          @for (schedule of schedules(); track schedule.day) {
+          <div class="flex items-center">
+            <span class="uppercase font-semibold">{{ schedule.day }}</span>
+            <span class="mx-4 flex-1 border-b border-dotted border-gray-400"></span>
+            <span class="font-semibold uppercase">{{ schedule.hours }}</span>
+          </div>
+          }
+        </div>
+
+        <div class="font-semibold uppercase tracking-wider mt-12">
+          Llamar: <span>854-752-66852</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>

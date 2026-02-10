@@ -1,0 +1,13 @@
+.edgtf-wh-line {
+  position: relative;
+  height: 1px;
+}
+
+.edgtf-wh-line-inner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+}

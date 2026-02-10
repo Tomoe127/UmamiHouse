@@ -1,0 +1,16 @@
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  will-change: transform;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+}

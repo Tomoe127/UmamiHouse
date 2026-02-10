@@ -1,0 +1,31 @@
+.embla {
+  overflow: hidden;
+  position: relative;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  will-change: transform;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 25%;
+  min-width: 0;
+}
+
+.embla__container.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.embla__slide img {
+  user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

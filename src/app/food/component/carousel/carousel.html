@@ -1,0 +1,20 @@
+<div class="relative w-full bg-gray-50">
+  <div class="embla w-full overflow-hidden" #emblaNode>
+    <div class="embla__container flex">
+      @for (image of images(); track image.url) {
+      <div class="embla__slide" style="flex: 0 0 25%; min-width: 0;">
+        <div class="relative overflow-hidden cursor-grab active:cursor-grabbing group aspect-[397/333.47]">
+          <img [src]="image.url" [alt]="image.title" class="w-full h-full object-cover" draggable="false"
+            loading="lazy">
+          <div class="absolute inset-0 bg-black/0 hover:bg-black/70 transition-all flex items-center justify-center">
+            <h3
+              class="text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 text-center">
+              {{ image.title }}
+            </h3>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<section class="relative w-full px-5 md:px-11 lg:px-19 py-20 bg-cover bg-center bg-fixed"
+  style="background-image: url('https://cdn.i-scmp.com/sites/default/files/d8/images/canvas/2024/12/04/274035db-9f29-4efb-bce0-f9efc5ae1e38_835f25ba.jpg');">
+
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div class="relative z-10 mx-auto ">
+
+    <div class="text-center mt-10">
+      <h1 class="text-8xl font-serif text-white/30 leading-none">”</h1>
+    </div>
+
+    <div class="embla overflow-hidden" #reviewEmbla>
+      <div class="embla__container flex">
+        @for (review of reviews(); track review.name) {
+        <div class="embla__slide flex-[0_0_100%] min-w-0">
+          <div class="text-center max-w-3xl mx-auto cursor-grab">
+            <p class="text-xl md:text-2xl text-white leading-relaxed mb-8 italic">
+              "{{ review.comment }}"
+            </p>
+            <p class="text-lg text-gray-300 font-semibold uppercase tracking-wider">
+              {{ review.name }}
+            </p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-3 mt-10 mb-10">
+      @for (review of reviews(); track $index; let i = $index) {
+      <button (click)="scrollToSlide(i)" [class.bg-white]="selectedIndex() === i"
+        [class.bg-white/30]="selectedIndex() !== i"
+        class="w-3 h-3 rounded-full transition-all duration-300 hover:bg-white/60">
+      </button>
+      }
+    </div>
+
+  </div>
+</section>

@@ -1,11 +1,27 @@
-<nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
-  <a href="#" class="text-2xl font-bold text-gray-800 hover:text-gray-600 transition">Logo</a>
-  
-  <div class="flex gap-6">
-    <a href="#horario" class="text-gray-700 hover:text-gray-900 transition font-medium">Horario</a>
-    <a href="#cocina" class="text-gray-700 hover:text-gray-900 transition font-medium">Cocina</a>
-    <a href="#menu" class="text-gray-700 hover:text-gray-900 transition font-medium">Menu</a>
-    <a href="#resena" class="text-gray-700 hover:text-gray-900 transition font-medium">Reseña</a>
-    <a href="#contacto" class="text-gray-700 hover:text-gray-900 transition font-medium">Contacto</a>
+<nav class="flex items-center justify-between px-6 py-4 bg-white dark:bg-dark shadow-md">
+  <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition">Logo</a>
+
+  <div class="flex items-center gap-6">
+    <a href="#horario" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition font-medium">Horario</a>
+    <a href="#cocina" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition font-medium">Cocina</a>
+    <a href="#menu" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition font-medium">Menu</a>
+    <a href="#resena" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition font-medium">Reseña</a>
+    <a href="#contacto" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition font-medium">Contacto</a>
+
+    <button type="button" (click)="toggleTheme()"
+      class="flex items-center justify-center w-9 h-9 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+      [attr.aria-label]="theme() === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'">
+      @if (theme() === 'dark') {
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+      } @else {
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+      }
+    </button>
   </div>
 </nav>

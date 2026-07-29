@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dark: #151412;
+  --color-dark-card: #1e1c19;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white dark:bg-dark;
 }

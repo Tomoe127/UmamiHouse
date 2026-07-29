@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeService } from '../../theme';
 
 @Component({
   selector: 'app-nav',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './nav.css',
 })
 export class Nav {
+  private readonly themeService = inject(ThemeService);
 
+  readonly theme = this.themeService.theme;
+
+  toggleTheme(): void {
+    this.themeService.toggle();
+  }
 }

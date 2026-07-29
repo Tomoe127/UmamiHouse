@@ -21,15 +21,15 @@ export class Comentario implements OnInit, OnDestroy {
 
   reviews = signal<Review[]>([
     {
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatem? Excepturi dignissimos quam necessitatibus corporis.',
+      comment: 'La mejor experiencia de comida japonesa que he probado. Cada plato refleja dedicación y autenticidad.',
       name: 'Jane Doe'
     },
     {
-      comment: 'Exceptional service and amazing atmosphere! The coffee here is simply the best I have ever tasted. Highly recommended!',
+      comment: 'Servicio excepcional y un ambiente increíble. El ramen aquí es simplemente el mejor que he probado. ¡Muy recomendado!',
       name: 'John Smith'
     },
     {
-      comment: 'A hidden gem in the city. The baristas are true artists and the ambiance is perfect for working or relaxing.',
+      comment: 'Una joya escondida en la ciudad. Los chefs son verdaderos artistas y el ambiente es perfecto para disfrutar en familia.',
       name: 'Maria Garcia'
     }
   ]);

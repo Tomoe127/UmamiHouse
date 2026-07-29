@@ -18,42 +18,42 @@ export class Platos {
     {
       image: 'img/Ramen1.png',
       title: 'Ramen',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Caldo intenso a fuego lento, fideos artesanales y toppings frescos en cada tazón.'
     },
     {
       image: 'img/Gyoza1.png',
       title: 'Gyoza',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Empanadillas japonesas rellenas de cerdo y vegetales, doradas a la perfección.'
     },
     {
       image: 'img/Gyudon1.png',
       title: 'Gyudon',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Tazón de arroz con finas láminas de res guisadas en salsa dulce de soya.'
     },
     {
       image: 'img/Karaage1.png',
       title: 'Karaage',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Pollo japonés marinado y frito, crujiente por fuera y jugoso por dentro.'
     },
     {
       image: 'img/Katsudon1.png',
       title: 'Katsudon',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Chuleta de cerdo empanizada sobre arroz, bañada en huevo y salsa tare.'
     },
     {
       image: 'img/Okonomiyaki1.png',
       title: 'Okonomiyaki',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Panqueque salado japonés con repollo, mariscos y salsa okonomiyaki.'
     },
     {
       image: 'img/Tonkatsu1.png',
       title: 'Tonkatsu',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Chuleta de cerdo empanizada y frita, servida con salsa tonkatsu y repollo fresco.'
     },
     {
       image: 'img/Yakisoba1.png',
       title: 'Yakisoba',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus?'
+      description: 'Fideos salteados con vegetales, carne y la clásica salsa yakisoba.'
     }
   ]);
 

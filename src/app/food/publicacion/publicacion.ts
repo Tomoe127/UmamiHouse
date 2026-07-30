@@ -20,7 +20,7 @@ export class Publicacion {
 
   blogPosts = signal<BlogPost[]>([
     {
-      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+      image: 'https://images.unsplash.com/photo-1470114755716-3e1124c6c3bd?w=800',
       title: 'El Arte del Ramen',
       author: 'Jane Doe',
       category: 'Evento',
@@ -29,7 +29,7 @@ export class Publicacion {
       link: '#'
     },
     {
-      image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800',
+      image: 'https://images.unsplash.com/photo-1455279032140-49a4bf46f343?w=800',
       title: 'Taller de Sushi',
       author: 'John Smith',
       category: 'Taller',
@@ -38,7 +38,7 @@ export class Publicacion {
       link: '#'
     },
     {
-      image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800',
+      image: 'https://images.unsplash.com/photo-1624223875266-81ebbb795584?w=800',
       title: 'Nuevo Menú de Temporada',
       author: 'Maria Garcia',
       category: 'Noticias',
